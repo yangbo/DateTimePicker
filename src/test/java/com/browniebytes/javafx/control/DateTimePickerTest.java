@@ -6,24 +6,26 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.time.LocalDateTime;
+
 public class DateTimePickerTest extends Application {
 
-	@Override
-	public void start(Stage primaryStage) throws Exception {
-		final VBox vBox = new VBox();
-		vBox.getChildren().add(new Label("Date/Time"));
-		vBox.getChildren().add(new DateTimePicker());
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        final VBox vBox = new VBox();
+        vBox.getChildren().add(new Label("Date/Time"));
+        vBox.getChildren().add(new DateTimePicker(LocalDateTime.now()));
 
-		final Scene scene = new Scene(vBox);
+        final Scene scene = new Scene(vBox);
 
-		primaryStage.setScene(scene);
-		primaryStage.sizeToScene();
+        primaryStage.setScene(scene);
+        primaryStage.sizeToScene();
 
-		primaryStage.show();
-	}
+        primaryStage.show();
+    }
 
-	public static void main(String[] args) {
-		launch(args);
-	}
+    public static void main(String[] args) {
+        launch(args);
+    }
 
 }
