@@ -118,10 +118,10 @@ public class HoursPicker extends GridPane implements Initializable {
 
 						// Toggle "AM" and "PM" and add 12 to the offset for PM
 						if (newValue) {
-							amPmButton.setText("PM");
+							amPmButton.setText("下午");
 							offset = NUM_BUTTONS;
 						} else {
-							amPmButton.setText("AM");
+							amPmButton.setText("上午");
 						}
 
 						// Update button text

@@ -98,10 +98,11 @@
 
 	<ToggleButton
 			fx:id="amPmButton"
-			text="AM"
+			text="上午"
 			GridPane.rowIndex="0"
 			GridPane.columnIndex="6"
-			GridPane.rowSpan="3"/>
+			GridPane.rowSpan="3"
+	minWidth="100"/>
 
 </fx:root>
 
